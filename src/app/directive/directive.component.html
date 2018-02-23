@@ -1,0 +1,3 @@
+<button class="btn btn-primary" (click)="onClick()">Display Details</button>  
+<p *ngIf="displayDetails">Secret Password = tuna</p>
+<div *ngFor="let item of incrementList" [ngStyle]="{backgroundColor:getColor(item)}" [ngClass]="{displayWhite:item>=5}" >{{item}}</div>
